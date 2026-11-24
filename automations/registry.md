@@ -46,5 +46,9 @@ Each workflow needs its own entry below, in the format above.
 ## Claude via @claude in GitHub issues
 
 - **Owner:** Hana Kim (repo owner)
-- **Status:** not set up yet. Needs the Claude GitHub app installed on this repo.
-- **What it would do:** answer questions asked in GitHub issues on this repo, from the repo's files.
+- **Status:** being set up. Live once the Claude GitHub app is installed on this repo and the API key secret is added.
+- **Runs in:** GitHub Actions, `.github/workflows/claude.yml` (uses `anthropics/claude-code-action@v1`).
+- **What it does:** answers questions in issues and pull requests that mention `@claude`, from the repo's files and following `CLAUDE.md`.
+- **Trigger:** `@claude` in an issue title or body, an issue comment, or a PR review or review comment. Only people with write access to the repo can trigger it.
+- **Where its credentials live:** GitHub repository secret `ANTHROPIC_API_KEY` (the value is never written in this repo).
+- **What data it sees:** this repo, plus the text of the issue or PR it was mentioned in. Don't paste customer data into issues (team rule 3).

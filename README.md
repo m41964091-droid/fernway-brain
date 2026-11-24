@@ -44,7 +44,7 @@ It does **not** hold customer data, secrets, or compensation. Customer data stay
 
 **Ask Claude in the repo.** Open this repo in Claude Code and ask your question in plain words ("Who handles failed payments?"). Claude answers only from these files and names the file it used. If something isn't written down, it says "Not documented yet — ask [owner]".
 
-**Ask Claude in a GitHub issue.** Open an issue in this repo and mention `@claude` with your question. *(Not set up yet: this needs the Claude GitHub app installed on the repo.)*
+**Ask Claude in a GitHub issue.** Open an issue in this repo and mention `@claude` with your question. Claude replies in the issue. Only people with write access to the repo can trigger it. Don't paste customer data into issues (team rule 3).
 
 **Read the files directly.** Everything is plain Markdown.
 
