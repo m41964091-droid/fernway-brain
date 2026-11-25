@@ -1,4 +1,4 @@
-**Owner:** Ivan Petrenko · **Last reviewed:** 2026-11-24 · **Status:** draft
+**Owner:** Ivan Petrenko · **Last reviewed:** 2026-11-25 · **Status:** draft
 
 # Automations and AI use: registry
 
@@ -46,7 +46,7 @@ Each workflow needs its own entry below, in the format above.
 ## Claude via @claude in GitHub issues
 
 - **Owner:** Hana Kim (repo owner)
-- **Status:** being set up. Live once the Claude GitHub app is installed on this repo and the API key secret is added.
+- **Status:** live. Tested in issue #3 on 2026-11-25.
 - **Runs in:** GitHub Actions, `.github/workflows/claude.yml` (uses `anthropics/claude-code-action@v1`).
 - **What it does:** answers questions in issues and pull requests that mention `@claude`, from the repo's files and following `CLAUDE.md`.
 - **Trigger:** `@claude` in an issue title or body, an issue comment, or a PR review or review comment. Only people with write access to the repo can trigger it.
